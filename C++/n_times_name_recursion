@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+
+void print(string name, int n){
+    
+    if(n==0) return;
+    cout<<name<<" ";
+    print(name,--n);
+}
+
+int main() {
+    
+    string name;
+    int n;
+    cin>>n;
+    cin>>name;
+    print(name,n);
+
+    return 0;
+}
